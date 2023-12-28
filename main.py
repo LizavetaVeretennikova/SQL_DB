@@ -90,7 +90,7 @@ def find_client(conn, first_name='%', last_name='%', email='%', phone='%'):
         """,(phone))
         return cur.fetchall()
 
-with psycopg2.connect(database="client_db", user="postgres", password="MurakamI200408") as conn:
+with psycopg2.connect(database="client_db", user="postgres", password="") as conn:
     if __name__ == "__main__":
         create_db(conn)
         new_client_add(conn, 'Алекс', 'Иванов', 'alexivanov@yandex.ru', '89960786556')
